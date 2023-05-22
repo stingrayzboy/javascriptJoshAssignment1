@@ -8,5 +8,31 @@
             console.log("Hello World");
         </script>
         <script src="./script.js"></script>
+        <script>
+            let a; //declare a variable a
+            a = 10; //assign 10 to a
+            // this works fine
+            // const b; //This is not happy at all, giving error Uncaught SyntaxError: Missing initializer in const declaration
+            const b = 1; // in order to make the code work set something in b
+            const x = [1,2,3,4]; // create an array of integers
+            console.log(typeof(x)); // this returns object
+            const y = true; // create a boolean
+            console.log(typeof(y)); // this returns boolean
+
+            let z = NaN; // create a NaN 
+            console.log(typeof(z)); //this returns number
+
+            // lets check if one typeof can be like another
+
+            console.log(typeof(a) === typeof(z)); //return true
+            console.log(typeof(a) === typeof(x)); // return false
+
+
+            //BONUS
+            // can data inside a constant object be changed
+
+            x[4] = 12;
+            console.log(x); // Yes it can!
+        </script>
     </body>
 </html>
